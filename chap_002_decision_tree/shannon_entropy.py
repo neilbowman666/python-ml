@@ -1,5 +1,7 @@
 from math import log
 
+from chap_002_decision_tree.data_set import create_dataset_1, create_dataset_2
+
 
 def shannon_entropy(data_set):
     num_entries = len(data_set)  # len() 将获取二维数组的第一维个数
@@ -16,30 +18,6 @@ def shannon_entropy(data_set):
         prob = float(label_counts[key]) / num_entries
         shannon_ent -= prob * log(prob, 2)
     return shannon_ent
-
-
-def create_dataset_1():
-    data_set = [
-        [1, 1, 'yes'],
-        [1, 1, 'yes'],
-        [1, 0, 'no'],
-        [0, 1, 'no'],
-        [0, 1, 'no'],
-    ]
-    labels = ['no surfacing', 'flippers']
-    return data_set, labels
-
-
-def create_dataset_2():
-    data_set = [
-        [1, 1, 'maybe'],
-        [1, 1, 'yes'],
-        [1, 0, 'no'],
-        [0, 1, 'no'],
-        [0, 1, 'no'],
-    ]
-    labels = ['no surfacing', 'flippers']
-    return data_set, labels
 
 
 if __name__ == '__main__':
