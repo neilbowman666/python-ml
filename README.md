@@ -2,15 +2,15 @@
 
 ## 更新追踪
 
-### 简单 K-临近算法
+### [简单 K-临近算法](chap_001_knn)
 
-* 欧几里得距离
+* [欧几里得距离](chap_001_knn/euclidean_knn_classify.py)
 
-### 决策树
+### [决策树](chap_002_decision_tree)
 
-* 香农熵计算
+* [香农熵计算](chap_002_decision_tree/shannon_entropy.py)
 
-* 切分数据集
+* [切分数据集](chap_002_decision_tree/split_dataset.py)
 
 ## 参考文献
 
